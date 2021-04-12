@@ -2,12 +2,10 @@
   <div id="app">
     <img width="25%" src="./assets/logo.png">
     <div>
-      This input is used in the header of the opened window. <br />
-      Try updating it while the window is open! 
-      <br />
+      <h1>This is a demo for a single component pop up window <br />
+      to serve such as printing or escape parent structure. </h1>
       <input v-model="msg" style="width: 25%" />
-      <br />
-      <input type="checkbox" v-model="open" /> Check me to open a portal!
+      <input type="checkbox" v-model="open" /> Check me!
     </div>
     <WindowPortal v-model="open">
       <HelloWorld :msg="msg" />
